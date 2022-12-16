@@ -17,6 +17,8 @@ dependencies:
   #shared
   common:
     path: ../../shared_libraries/common
+  component:
+    path: ../../shared_libraries/component  
   dependencies:
     path: ../../shared_libraries/dependencies
 

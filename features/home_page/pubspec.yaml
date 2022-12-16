@@ -16,6 +16,8 @@ dependencies:
     path: ../../shared_libraries/component
   dependencies:
     path: ../../shared_libraries/dependencies
+  core:
+    path: ../../shared_libraries/core  
   resources:
     path: ../../resources/resources
 
@@ -24,15 +26,21 @@ dependencies:
     path: ../../domains/authentication
   product:
     path: ../../domains/product
+  payment:
+    path: ../../domains/payment  
 
   #Features
   account:
     path: ../account
+  payment_feature:
+    path: ../payment_feature  
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^1.0.0
+  bloc_test: ^9.0.3
+  mocktail: ^0.3.0  
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

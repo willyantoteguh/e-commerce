@@ -1,7 +1,10 @@
 import 'package:common/utils/navigation/navigation_helper.dart';
 import 'package:common/utils/navigation/router/auth_router.dart';
+import 'package:common/utils/navigation/router/cart_router.dart';
 import 'package:common/utils/navigation/router/home_router.dart';
 import 'package:common/utils/navigation/router/onboarding_router.dart';
+import 'package:common/utils/navigation/router/payment_router.dart';
+import 'package:common/utils/navigation/router/product_router.dart';
 import 'package:dependencies/get_it/get_it.dart';
 
 class CommonDependencies {
@@ -27,6 +30,21 @@ class CommonDependencies {
     );
     sl.registerLazySingleton<HomeRouter>(
       () => HomeRouterImpl(
+        navigationHelper: sl(),
+      ),
+    );
+    sl.registerLazySingleton<ProductRouter>(
+      () => ProductRouterImpl(
+        navigationHelper: sl(),
+      ),
+    );
+    sl.registerLazySingleton<CartRouter>(
+      () => CartRouterImpl(
+        navigationHelper: sl(),
+      ),
+    );
+    sl.registerLazySingleton<PaymentRouter>(
+      () => PaymentRouterImpl(
         navigationHelper: sl(),
       ),
     );

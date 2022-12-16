@@ -10,6 +10,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  common:
+    path: ../common  
   resources:
     path: ../../resources/resources
   dependencies:
@@ -17,6 +19,9 @@ dependencies:
 
   product:
     path: ../../domains/product
+
+  cart:
+    path: ../../domains/cart  
 
 dev_dependencies:
   flutter_test:

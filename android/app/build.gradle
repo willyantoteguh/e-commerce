@@ -58,6 +58,21 @@ android {
             signingConfig signingConfigs.debug
         }
     }
+
+    // flavorDimensions "app"
+
+    // productFlavors {
+    //     development {
+    //         dimension "app"
+    //         resValue "string", "app_name", "E-Commerce Dev"
+    //         versionNameSuffix "-stage"
+    //         applicationIdSuffix ".stage"
+    //     }
+    //     production {
+    //         dimension "app"
+    //         resValue "string", "app_name", "E-Commerce"
+    //     }
+    // }
 }
 
 flutter {

@@ -23,6 +23,10 @@ class AppApi {
 
   String get baseUrl => 'https://aurel-store.herokuapp.com/v1/';
 
+  String get baseUrlDev => 'https://aurel-store.herokuapp.com/v1/';
+
+  String get baseUrlProd => 'https://aurel-store.herokuapp.com/v1/';
+
   String get signUp => 'user/customer/register';
 
   String get signIn => 'user/login';
@@ -36,6 +40,20 @@ class AppApi {
   String get product => 'customer/product?per_page=20';
 
   String get category => 'category';
+
+  String get detailProduct => 'customer/product';
+
+  String get seller => 'customer/seller/';
+
+  String get chart => 'customer/cart';
+
+  String get paymentMethod => 'customer/payment/method';
+
+  String get createTransaction => 'customer/transaction';
+
+  String get createPayment => 'customer/payment';
+
+  String get history => 'customer/transaction';
 }
 
 class ErrorKey {
@@ -65,8 +83,7 @@ class ErrorMessage {
 
   String get confirmPasswordEmpty => "confirm password must not empty";
 
-  String get confirmPasswordMustSame =>
-      "password and confirm password must same";
+  String get confirmPasswordMustSame => "password and confirm password must same";
 
   String get formNotEmpty => "username and password must not empty";
 
@@ -84,6 +101,5 @@ class ErrorMessage {
 class FCMServerKey {
   const FCMServerKey();
 
-  String get fcmServerKey =>
-      "AAAAmdmaPOA:APA91bGG4DE4o2sZbf53aYKP11quEQ5z_Nj-_X3L1AYi5M-ng6kgK5p6QxumBpWb8lpyGxyUBbDtNTT8ngb2qmVnvOW68C2XkB06JdplxRYNJ3Ki5s6mXilI-IX_cTSQl2Ug9rgCoPHI";
+  String get fcmServerKey => "AAAAmdmaPOA:APA91bGG4DE4o2sZbf53aYKP11quEQ5z_Nj-_X3L1AYi5M-ng6kgK5p6QxumBpWb8lpyGxyUBbDtNTT8ngb2qmVnvOW68C2XkB06JdplxRYNJ3Ki5s6mXilI-IX_cTSQl2Ug9rgCoPHI";
 }
